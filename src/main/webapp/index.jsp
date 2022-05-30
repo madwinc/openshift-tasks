@@ -141,13 +141,11 @@
                     <td>Pod Hostname</td>
                     <td><%= System.getenv("HOSTNAME") %></td>
                   </tr>
-		  <--
-                  <tr role="row" class="even">
+		  <tr role="row" class="even">
                     <td>Pod IP</td>
                     <td><%= System.getenv("MY_POD_IP") %></td>
                   </tr>
-		  -->
-                  <tr role="row" class="odd">
+		  <tr role="row" class="odd">
                     <td>Used Memory</td>
                     <% int mb = 1024*1024; %>
                     <td><%= (Runtime.getRuntime().totalMemory()) / mb %> MB</td>
